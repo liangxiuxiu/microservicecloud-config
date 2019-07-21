@@ -7,6 +7,9 @@ spring:
       elasticsearch:
         cluster-name: zwfw
         cluster-nodes: 192.168.191.103:9300
+        
+    main:
+      allow-bean-definition-overriding: true
 eureka:
   client:
     service-url:
@@ -15,3 +18,4 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 15
+    
