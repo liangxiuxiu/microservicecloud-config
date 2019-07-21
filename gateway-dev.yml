@@ -1,0 +1,27 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: leyou-api-gateway
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:10086/eureka
+    registry-fetch-interval-seconds: 5 #定时去拉取服务
+zuul:
+  prefix: /api #设置前缀
+  routes:
+    item-service: /item/** #路游到商品的微服务其中item-service 相当于服务id,当访问 /item/**时就会路由到这个服务上
+#----------------------以下是路由的具体配置---------------------
+#zuul:
+ # prefix: /api
+  #routes:
+   # item-service: #路由名称，可以随便写，习惯上服务名
+     # path: /item/**
+     # serviceId：item-service
+crosUrl:
+  http://manager.leyou.com:81
+
+
