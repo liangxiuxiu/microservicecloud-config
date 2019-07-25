@@ -23,6 +23,6 @@ zuul:
      # path: /item/**
      # serviceId：item-service
 crosUrl:
-  http://manager.leyou.com:81,http://www.leyou.com
+  http://manager.leyou.com:81,http://www.leyou.com:81
 
 
