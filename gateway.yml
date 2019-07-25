@@ -14,6 +14,7 @@ zuul:
   prefix: /api #设置前缀
   routes:
     item-service: /item/** #路游到商品的微服务其中item-service 相当于服务id,当访问 /item/**时就会路由到这个服务上
+    search-service: /search/**
 #----------------------以下是路由的具体配置---------------------
 #zuul:
  # prefix: /api
@@ -22,6 +23,6 @@ zuul:
      # path: /item/**
      # serviceId：item-service
 crosUrl:
-  http://manager.leyou.com:81
+  http://manager.leyou.com:81,http://www.leyou.com
 
 
