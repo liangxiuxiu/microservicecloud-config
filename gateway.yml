@@ -24,5 +24,7 @@ zuul:
      # serviceId：item-service
 crosUrl:
   http://manager.leyou.com:81,http://www.leyou.com:81
+  
+  
 
 
