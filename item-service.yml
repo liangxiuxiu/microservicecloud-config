@@ -8,6 +8,13 @@ spring:
     password: 101423
     url: jdbc:mysql://127.0.0.1:3306/leyou
     driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    host: 192.168.191.103
+    username: leyou
+    password: leyou
+    virtual-host: /leyou
+    template:
+      exchange: LEYOU.ITEM.EXCHANGE #配置默认的交换机
 mybatis:
   type-aliases-package: com.leyou.item.pojo
 eureka:
